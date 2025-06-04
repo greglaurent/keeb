@@ -48,10 +48,10 @@
             //                    | GUI | LWR | SPC |   | ENT | RSE  | ALT |
 
             bindings = <
-&kp GRAVE       &kp Q  &kp W              &kp E                &kp R           &kp T                     &kp Y          &kp U           &kp I                 &kp O               &kp P     &kp DELETE
-&kp ESCAPE      &kp A  &hrm_l LEFT_ALT S  &hrm_l LEFT_SHIFT D  &hrm_l LCTRL F  &kp G                     &kp H          &hrm_r RCTRL J  &hrm_r RIGHT_SHIFT K  &hrm_r RIGHT_ALT L  &kp SEMI  &kp SQT
-&kp LEFT_SHIFT  &kp Z  &kp X              &kp C                &kp V           &kp B                     &kp N          &kp M           &kp COMMA             &kp DOT             &kp FSLH  &kp RIGHT_SHIFT
-                                          &mo 4                &mo 1           &hrm_l LEFT_GUI RETURN    &mt TAB SPACE  &mo 2           &mo 3
+&kp GRAVE       &kp Q              &kp W              &kp E                &kp R           &kp T                     &kp Y          &kp U           &kp I                 &kp O               &kp P                       &kp DELETE
+&kp ESCAPE      &hrm_l LEFT_GUI A  &hrm_l LEFT_ALT S  &hrm_l LEFT_SHIFT D  &hrm_l LCTRL F  &kp G                     &kp H          &hrm_r RCTRL J  &hrm_r RIGHT_SHIFT K  &hrm_r RIGHT_ALT L  &hrm_r RIGHT_GUI SEMICOLON  &kp SQT
+&kp LEFT_SHIFT  &kp Z              &kp X              &kp C                &kp V           &kp B                     &kp N          &kp M           &kp COMMA             &kp DOT             &kp FSLH                    &kp RIGHT_SHIFT
+                                                      &mo 4                &mo 1           &hrm_l LEFT_GUI RETURN    &mt TAB SPACE  &mo 2           &mo 3
             >;
         };
 
