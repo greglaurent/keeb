@@ -57,10 +57,10 @@
 
         nav {
             bindings = <
-&trans  &kp KP_DIVIDE    &mt AMPERSAND NUMBER_7    &mt ASTERISK NUMBER_8  &mt LEFT_PARENTHESIS NUMBER_9  &kp KP_MINUS       &mt RIGHT_PARENTHESIS LEFT_PARENTHESIS  &mt RIGHT_BRACKET LEFT_BRACKET  &kp MINUS     &kp EQUAL        &kp BACKSLASH  &kp DELETE
-&trans  &kp KP_MULTIPLY  &mt DOLLAR NUMBER_4       &mt PERCENT NUMBER_5   &mt CARET NUMBER_6             &kp LS(KP_PLUS)    &kp LEFT_ARROW                          &kp DOWN_ARROW                  &kp UP_ARROW  &kp RIGHT_ARROW  &trans         &trans
-&trans  &kp NUMBER_0     &mt EXCLAMATION NUMBER_1  &mt AT_SIGN NUMBER_2   &mt HASH NUMBER_3              &trans             &trans                                  &trans                          &kp COMMA     &kp PERIOD       &kp SLASH      &trans
-                                                   &kp DOT                &trans                         &trans             &trans                                  &tog 2                          &tog 3
+&trans  &kp KP_DIVIDE                   &mt AMPERSAND NUMBER_7    &mt ASTERISK NUMBER_8  &mt LEFT_PARENTHESIS NUMBER_9  &kp KP_MINUS       &mt RIGHT_PARENTHESIS LEFT_PARENTHESIS  &mt RIGHT_BRACKET LEFT_BRACKET  &kp MINUS     &kp EQUAL        &kp BACKSLASH  &kp DELETE
+&trans  &kp KP_MULTIPLY                 &mt DOLLAR NUMBER_4       &mt PERCENT NUMBER_5   &mt CARET NUMBER_6             &kp LS(KP_PLUS)    &kp LEFT_ARROW                          &kp DOWN_ARROW                  &kp UP_ARROW  &kp RIGHT_ARROW  &trans         &trans
+&trans  &mt RIGHT_PARENTHESIS NUMBER_0  &mt EXCLAMATION NUMBER_1  &mt AT_SIGN NUMBER_2   &mt HASH NUMBER_3              &trans             &trans                                  &trans                          &kp COMMA     &kp PERIOD       &kp SLASH      &trans
+                                                                  &kp DOT                &trans                         &trans             &trans                                  &tog 2                          &tog 3
             >;
         };
 
