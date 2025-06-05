@@ -59,10 +59,10 @@
 
         nav {
             bindings = <
-&trans  &kp KP_DIVIDE                    &mt AMPERSAND NUMBER_7    &mt ASTERISK NUMBER_8    &mt LEFT_PARENTHESIS NUMBER_9  &kp KP_MINUS       &mt RIGHT_PARENTHESIS LEFT_PARENTHESIS  &mt RIGHT_BRACKET LEFT_BRACKET  &kp MINUS                    &kp EQUAL                    &kp BACKSLASH             &kp DELETE
-&trans  &hrm_l LEFT_CONTROL KP_MULTIPLY  &hrm_l LEFT_ALT NUMBER_4  &mt LEFT_SHIFT NUMBER_5  &mt LEFT_GUI NUMBER_6          &kp LS(KP_PLUS)    &kp LEFT_ARROW                          &hrm_r RIGHT_GUI DOWN_ARROW     &hrm_r UP_ARROW RIGHT_SHIFT  &hrm_r LEFT_ALT RIGHT_ARROW  &hrm_r RIGHT_CONTROL SQT  &trans
-&trans  &mt RIGHT_PARENTHESIS NUMBER_0   &mt EXCLAMATION NUMBER_1  &mt AT_SIGN NUMBER_2     &mt HASH NUMBER_3              &trans             &trans                                  &trans                          &kp COMMA                    &kp PERIOD                   &kp SLASH                 &trans
-                                                                   &kp DOT                  &trans                         &trans             &trans                                  &tog 2                          &tog 3
+&trans  &kp KP_DIVIDE                    &mt AMPERSAND NUMBER_7    &mt ASTERISK NUMBER_8    &mt LEFT_PARENTHESIS NUMBER_9  &kp KP_MINUS       &mt RIGHT_BRACKET LEFT_BRACKET  &mt RIGHT_PARENTHESIS LEFT_PARENTHESIS  &kp MINUS                      &kp EQUAL                 &kp BACKSLASH                     &kp DELETE
+&trans  &hrm_l LEFT_CONTROL KP_MULTIPLY  &hrm_l LEFT_ALT NUMBER_4  &mt LEFT_SHIFT NUMBER_5  &mt LEFT_GUI NUMBER_6          &kp LS(KP_PLUS)    &mt RIGHT_BRACE LEFT_BRACE      &hrm_r RIGHT_GUI LEFT_ARROW             &hrm_r RIGHT_SHIFT DOWN_ARROW  &hrm_r LEFT_ALT UP_ARROW  &hrm_r RIGHT_CONTROL RIGHT_ARROW  &trans
+&trans  &mt RIGHT_PARENTHESIS NUMBER_0   &mt EXCLAMATION NUMBER_1  &mt AT_SIGN NUMBER_2     &mt HASH NUMBER_3              &trans             &trans                          &trans                                  &kp COMMA                      &kp PERIOD                &kp SLASH                         &trans
+                                                                   &kp DOT                  &trans                         &trans             &trans                          &tog 2                                  &tog 3
             >;
         };
 
