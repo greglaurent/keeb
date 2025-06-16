@@ -59,10 +59,10 @@
 
         nav {
             bindings = <
-&trans  &kp NUMBER_1           &kp NUMBER_2           &kp NUMBER_3          &kp NUMBER_4                &kp NUMBER_5                              &kp NUMBER_6                       &kp NUMBER_7                               &kp NUMBER_8                 &kp NUMBER_9                 &kp NUMBER_0                &kp DELETE
-&trans  &hrm_l LEFT_GUI GRAVE  &hrm_l LEFT_ALT MINUS  &mt LEFT_SHIFT EQUAL  &mt LEFT_CONTROL BACKSLASH  &hrm_l LEFT_PARENTHESIS LEFT_BRACKET      &kp LEFT_ARROW                     &hrm_r RIGHT_CONTROL DOWN                  &hrm_r RIGHT_SHIFT UP_ARROW  &hrm_r LEFT_ALT RIGHT_ARROW  &hrm_r RIGHT_GUI SEMICOLON  &trans
-&trans  &trans                 &trans                 &trans                &trans                      &hrm_l RIGHT_PARENTHESIS RIGHT_BRACKET    &hrm_r RIGHT_BRACKET LEFT_BRACKET  &hrm_r RIGHT_PARENTHESIS LEFT_PARENTHESIS  &hrm_r UNDERSCORE MINUS      &hrm_r PLUS EQUAL            &hrm_r PIPE BACKSLASH       &trans
-                                                      &trans                &trans                      &trans                                    &trans                             &trans                                     &tog 3
+&trans   &kp NUMBER_1           &kp NUMBER_2           &kp NUMBER_3          &kp NUMBER_4                &kp NUMBER_5                              &kp NUMBER_6                       &kp NUMBER_7                               &kp NUMBER_8                 &kp NUMBER_9                 &kp NUMBER_0                &kp DELETE
+&kp TAB  &hrm_l LEFT_GUI GRAVE  &hrm_l LEFT_ALT MINUS  &mt LEFT_SHIFT EQUAL  &mt LEFT_CONTROL BACKSLASH  &hrm_l LEFT_PARENTHESIS LEFT_BRACKET      &kp LEFT_ARROW                     &hrm_r RIGHT_CONTROL DOWN                  &hrm_r RIGHT_SHIFT UP_ARROW  &hrm_r LEFT_ALT RIGHT_ARROW  &hrm_r RIGHT_GUI SEMICOLON  &trans
+&trans   &trans                 &trans                 &trans                &trans                      &hrm_l RIGHT_PARENTHESIS RIGHT_BRACKET    &hrm_r RIGHT_BRACKET LEFT_BRACKET  &hrm_r RIGHT_PARENTHESIS LEFT_PARENTHESIS  &hrm_r UNDERSCORE MINUS      &hrm_r PLUS EQUAL            &hrm_r PIPE BACKSLASH       &trans
+                                                       &trans                &trans                      &trans                                    &trans                             &trans                                     &tog 3
             >;
         };
 
