@@ -59,10 +59,10 @@
 
         nav {
             bindings = <
-&kp GRAVE  &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3          &kp NUMBER_4      &kp NUMBER_5        &kp NUMBER_6       &kp NUMBER_7               &kp NUMBER_8                 &kp NUMBER_9                 &kp NUMBER_0   &kp DELETE
-&kp TAB    &kp LEFT_GUI  &kp LEFT_ALT  &kp LEFT_SHIFT        &kp LEFT_CONTROL  &trans              &kp LEFT_ARROW     &hrm_r RIGHT_CONTROL DOWN  &hrm_r RIGHT_SHIFT UP_ARROW  &hrm_r LEFT_ALT RIGHT_ARROW  &kp RIGHT_GUI  &trans
-&trans     &trans        &kp MINUS     &kp LEFT_PARENTHESIS  &kp LEFT_BRACE    &kp LEFT_BRACKET    &kp RIGHT_BRACKET  &kp RIGHT_BRACE            &kp RIGHT_PARENTHESIS        &hrm_r PLUS EQUAL            &trans         &trans
-                                       &trans                &trans            &trans              &trans             &trans                     &tog 3
+&kp GRAVE  &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3      &kp NUMBER_4          &kp NUMBER_5      &kp NUMBER_6    &kp NUMBER_7               &kp NUMBER_8                 &kp NUMBER_9                 &kp NUMBER_0   &kp DELETE
+&kp TAB    &kp LEFT_GUI  &kp LEFT_ALT  &kp LEFT_SHIFT    &kp LEFT_CONTROL      &trans            &kp LEFT_ARROW  &hrm_r RIGHT_CONTROL DOWN  &hrm_r RIGHT_SHIFT UP_ARROW  &hrm_r LEFT_ALT RIGHT_ARROW  &kp RIGHT_GUI  &trans
+&trans     &trans        &trans        &kp LEFT_BRACKET  &kp LEFT_PARENTHESIS  &kp LEFT_BRACE    &kp MINUS       &kp EQUAL                  &trans                       &trans                       &trans         &trans
+                                       &trans            &trans                &trans            &trans          &trans                     &tog 3
             >;
         };
 
