@@ -57,7 +57,7 @@
             >;
         };
 
-        nav {
+        num_symbol {
             bindings = <
 &kp GRAVE  &kp NUMBER_1    &kp NUMBER_2  &kp NUMBER_3      &kp NUMBER_4          &kp NUMBER_5      &kp NUMBER_6     &kp NUMBER_7               &kp NUMBER_8                 &kp NUMBER_9                 &kp NUMBER_0   &kp DELETE
 &kp TAB    &kp LEFT_GUI    &kp LEFT_ALT  &kp LEFT_SHIFT    &kp LEFT_CONTROL      &trans            &kp LEFT_ARROW   &hrm_r RIGHT_CONTROL DOWN  &hrm_r RIGHT_SHIFT UP_ARROW  &hrm_r LEFT_ALT RIGHT_ARROW  &kp RIGHT_GUI  &trans
@@ -75,7 +75,7 @@
             >;
         };
 
-        lower_layer {
+        bt {
             // -----------------------------------------------------------------------------------------
             // |  TAB |  1  |  2  |  3  |  4  |  5  |   |  6  |  7  |  8  |  9  |  0  | BSPC |
             // | BTCLR| BT1 | BT2 | BT3 | BT4 | BT5 |   | LFT | DWN |  UP | RGT |     |      |
