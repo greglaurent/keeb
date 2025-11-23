@@ -59,9 +59,9 @@
 
         num_symbol {
             bindings = <
-&kp GRAVE     &kp NUMBER_1    &kp NUMBER_2  &kp NUMBER_3      &kp NUMBER_4      &kp NUMBER_5            &kp NUMBER_6           &kp NUMBER_7               &kp NUMBER_8                 &kp NUMBER_9                 &kp NUMBER_0   &trans
-&kp TAB       &kp LEFT_GUI    &kp LEFT_ALT  &kp LEFT_SHIFT    &kp LEFT_CONTROL  &kp PERIOD              &kp LEFT_ARROW         &hrm_r RIGHT_CONTROL DOWN  &hrm_r RIGHT_SHIFT UP_ARROW  &hrm_r LEFT_ALT RIGHT_ARROW  &kp RIGHT_GUI  &trans
-&kp CAPSLOCK  &kp UNDERSCORE  &kp MINUS     &kp LEFT_BRACKET  &kp LEFT_BRACE    &kp LEFT_PARENTHESIS    &kp RIGHT_PARENTHESIS  &kp RIGHT_BRACE            &kp RIGHT_BRACKET            &kp EQUAL                    &kp PLUS       &trans
+&kp GRAVE     &kp NUMBER_1    &kp NUMBER_2  &kp NUMBER_3      &kp NUMBER_4      &kp NUMBER_5            &kp NUMBER_6           &kp NUMBER_7               &kp NUMBER_8                 &kp NUMBER_9                 &kp NUMBER_0                &trans
+&trans        &kp LEFT_GUI    &kp LEFT_ALT  &kp LEFT_SHIFT    &kp LEFT_CONTROL  &kp EQUAL               &kp LEFT_ARROW         &hrm_r RIGHT_CONTROL DOWN  &hrm_r RIGHT_SHIFT UP_ARROW  &hrm_r LEFT_ALT RIGHT_ARROW  &hrm_r RIGHT_GUI SEMICOLON  &trans
+&kp CAPSLOCK  &kp UNDERSCORE  &kp MINUS     &kp LEFT_BRACKET  &kp LEFT_BRACE    &kp LEFT_PARENTHESIS    &kp RIGHT_PARENTHESIS  &kp RIGHT_BRACE            &kp RIGHT_BRACKET            &trans                       &trans                      &kp COMMA
                                             &trans            &trans            &trans                  &trans                 &trans                     &tog 3
             >;
         };
