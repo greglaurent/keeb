@@ -59,10 +59,10 @@
 
         sym {
             bindings = <
-&kp GRAVE                  &kp EXCLAMATION  &kp AT_SIGN    &kp HASH          &kp DOLLAR        &kp PERCENT             &kp CARET              &kp AMPERSAND              &kp ASTERISK                 &kp LEFT_PARENTHESIS         &kp RIGHT_PARENTHESIS       &hrm_r LC(BACKSPACE) LC(BACKSPACE)
-&trans                     &kp LEFT_GUI     &kp LEFT_ALT   &kp LEFT_SHIFT    &kp LEFT_CONTROL  &kp EQUAL               &kp LEFT_ARROW         &hrm_r RIGHT_CONTROL DOWN  &hrm_r RIGHT_SHIFT UP_ARROW  &hrm_r LEFT_ALT RIGHT_ARROW  &hrm_r RIGHT_GUI SEMICOLON  &trans
-&hrm_l LC(DEL) LC(DELETE)  &kp MINUS        &kp LESS_THAN  &kp LEFT_BRACKET  &kp LEFT_BRACE    &kp LEFT_PARENTHESIS    &kp RIGHT_PARENTHESIS  &kp RIGHT_BRACE            &kp RIGHT_BRACKET            &kp GREATER_THAN             &kp UNDERSCORE              &trans
-                                                           &trans            &trans            &trans                  &trans                 &trans                     &trans
+&kp GRAVE                  &kp EXCLAMATION  &kp AT_SIGN    &kp HASH          &kp DOLLAR      &kp PERCENT             &kp CARET              &kp AMPERSAND            &kp ASTERISK                   &kp LEFT_PARENTHESIS         &kp RIGHT_PARENTHESIS       &hrm_r LC(BACKSPACE) LC(BACKSPACE)
+&trans                     &kp LEFT_GUI     &kp LEFT_ALT   &kp LEFT_CONTROL  &kp LEFT_SHIFT  &kp EQUAL               &kp LEFT_ARROW         &hrm_r RIGHT_SHIFT DOWN  &hrm_r RIGHT_CONTROL UP_ARROW  &hrm_r LEFT_ALT RIGHT_ARROW  &hrm_r RIGHT_GUI SEMICOLON  &trans
+&hrm_l LC(DEL) LC(DELETE)  &kp MINUS        &kp LESS_THAN  &kp LEFT_BRACKET  &kp LEFT_BRACE  &kp LEFT_PARENTHESIS    &kp RIGHT_PARENTHESIS  &kp RIGHT_BRACE          &kp RIGHT_BRACKET              &kp GREATER_THAN             &kp UNDERSCORE              &trans
+                                                           &trans            &trans          &trans                  &trans                 &trans                   &trans
             >;
         };
 
