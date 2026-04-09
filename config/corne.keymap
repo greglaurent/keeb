@@ -39,6 +39,136 @@
         };
     };
 
+    macros {
+        rust_arrow: rust_arrow {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&macro_press>, <&kp MINUS &kp GT>;
+
+            label = "RUST_ARROW";
+        };
+
+        rust_arrow_fat: rust_arrow_fat {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&macro_press>, <&kp EQUAL &kp GT>;
+
+            label = "RUST_ARROW_FAT";
+        };
+
+        rust_turbo_fish: rust_turbo_fish {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp COLON &kp COLON &kp LT &kp GT>, <&macro_press>;
+
+            label = "RUST_TURBO_FISH";
+        };
+
+        rust_closure: rust_closure {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp PIPE &kp X &kp PIPE>, <&macro_press>;
+
+            label = "RUST_CLOSURE";
+        };
+
+        rust_annotate: rust_annotate {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp POUND &kp LBKT &kp RBKT>, <&macro_press>;
+
+            label = "RUST_ANNOTATE";
+        };
+
+        logic_eq_not: logic_eq_not {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&macro_press>, <&kp EXCL &kp EQUAL>;
+
+            label = "LOGIC_EQ_NOT";
+        };
+
+        logic_lt: logic_lt {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&macro_press>, <&kp LT &kp EQUAL>;
+
+            label = "LOGIC_LT";
+        };
+
+        logic_gt: logic_gt {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&macro_press>, <&kp GT &kp EQUAL>;
+
+            label = "LOGIC_GT";
+        };
+
+        logic_and: logic_and {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&macro_press>, <&kp AMPS &kp AMPS>;
+
+            label = "LOGIC_AND";
+        };
+
+        logic_or: logic_or {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&macro_press>, <&kp PIPE &kp PIPE>;
+
+            label = "LOGIC_OR";
+        };
+
+        logic_bit_left: logic_bit_left {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&macro_press>, <&kp LT &kp LT>;
+
+            label = "LOGIC_BIT_LEFT";
+        };
+
+        logic_bit_right: logic_bit_right {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&macro_press>, <&kp GT &kp GT>;
+
+            label = "LOGIC_BIT_RIGHT";
+        };
+
+        logic_assign_plus: logic_assign_plus {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&macro_press>, <&kp PLUS &kp EQUAL>;
+
+            label = "LOGIC_ASSIGN_PLUS";
+        };
+
+        logic_assign_minus: logic_assign_minus {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp MINUS &kp EQUAL>, <&macro_press>;
+
+            label = "LOGIC_ASSIGN_MINUS";
+        };
+
+        logic_assign_mult: logic_assign_mult {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&macro_press>, <&kp STAR &kp EQUAL>;
+
+            label = "LOGIC_ASSIGN_MULT";
+        };
+
+        logic_assign_div: logic_assign_div {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&macro_press>, <&kp FSLH &kp EQUAL>;
+
+            label = "LOGIC_ASSIGN_DIV";
+        };
+    };
+
     keymap {
         compatible = "zmk,keymap";
 
@@ -59,37 +189,28 @@
 
         sym {
             bindings = <
-&kp GRAVE                  &kp EXCLAMATION  &kp AT_SIGN    &kp HASH          &kp DOLLAR      &kp PERCENT             &kp CARET              &kp AMPERSAND            &kp ASTERISK                   &kp LEFT_PARENTHESIS         &kp RIGHT_PARENTHESIS       &hrm_r LC(BACKSPACE) LC(BACKSPACE)
-&trans                     &kp LEFT_GUI     &kp LEFT_ALT   &kp LEFT_CONTROL  &kp LEFT_SHIFT  &kp EQUAL               &kp LEFT_ARROW         &hrm_r RIGHT_SHIFT DOWN  &hrm_r RIGHT_CONTROL UP_ARROW  &hrm_r LEFT_ALT RIGHT_ARROW  &hrm_r RIGHT_GUI SEMICOLON  &trans
-&hrm_l LC(DEL) LC(DELETE)  &kp MINUS        &kp LESS_THAN  &kp LEFT_BRACKET  &kp LEFT_BRACE  &kp LEFT_PARENTHESIS    &kp RIGHT_PARENTHESIS  &kp RIGHT_BRACE          &kp RIGHT_BRACKET              &kp GREATER_THAN             &kp UNDERSCORE              &trans
-                                                           &trans            &trans          &trans                  &trans                 &trans                   &trans
+&kp GRAVE                  &kp NUMBER_1     &kp NUMBER_2  &kp NUMBER_3  &kp NUMBER_4      &kp NUMBER_5         &kp NUMBER_6    &kp NUMBER_7     &kp NUMBER_8   &kp NUMBER_9          &kp NUMBER_0           &hrm_r LC(BACKSPACE) LC(BACKSPACE)
+&trans                     &kp EXCLAMATION  &kp AT_SIGN   &kp HASH      &kp DOLLAR        &kp PERCENT          &kp CARET       &kp AMPERSAND    &kp ASTERISK   &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &trans
+&hrm_l LC(DEL) LC(DELETE)  &kp MINUS        &kp PLUS      &kp EQUAL     &kp LEFT_BRACKET  &kp RIGHT_BRACKET    &kp LEFT_BRACE  &kp RIGHT_BRACE  &kp LESS_THAN  &kp GREATER_THAN      &kp UNDER              &trans
+                                                          &trans        &trans            &trans               &trans          &trans           &trans
             >;
         };
 
-        num {
+        macros {
             bindings = <
-&kp TILDE  &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3    &kp NUMBER_4      &kp NUMBER_5    &kp NUMBER_6    &kp NUMBER_7               &kp NUMBER_8                 &kp NUMBER_9                 &kp NUMBER_0                &trans
-&trans     &kp LEFT_GUI  &kp LEFT_ALT  &kp LEFT_SHIFT  &kp LEFT_CONTROL  &kp EQUAL       &kp LEFT_ARROW  &hrm_r RIGHT_CONTROL DOWN  &hrm_r RIGHT_SHIFT UP_ARROW  &hrm_r LEFT_ALT RIGHT_ARROW  &hrm_r RIGHT_GUI SEMICOLON  &trans
-&trans     &trans        &trans        &trans          &trans            &trans          &trans          &trans                     &trans                       &trans                       &trans                      &trans
-                                       &trans          &trans            &trans          &trans          &trans                     &trans
+&trans      &rust_annotate  &rust_closure  &rust_arrow_fat  &rust_arrow  &rust_turbo_fish    &trans           &trans            &trans              &trans               &trans              &trans
+&caps_word  &logic_lt       &logic_gt      &logic_eq_not    &logic_and   &logic_or           &logic_bit_left  &logic_bit_right  &logic_assign_plus  &logic_assign_minus  &logic_assign_mult  &logic_assign_div
+&trans      &trans          &trans         &trans           &trans       &trans              &trans           &trans            &trans              &trans               &trans              &trans
+                                           &trans           &trans       &trans              &trans           &trans            &trans
             >;
         };
 
         func {
             bindings = <
-&trans        &kp F1  &kp F2    &kp F3     &kp F4   &kp F5                  &kp F6            &kp F7             &kp F8           &kp F9                &kp F10  &kp PRINTSCREEN
-&kp CAPSLOCK  &trans  &kp HOME  &kp PG_UP  &kp END  &kp C_AC_SCROLL_UP      &kp C_MUTE        &kp C_VOLUME_DOWN  &kp C_VOLUME_UP  &kp C_BRIGHTNESS_INC  &kp F11  &trans
-&trans        &trans  &trans    &kp PG_DN  &trans   &kp C_AC_SCROLL_DOWN    &kp C_PREV        &kp C_PLAY_PAUSE   &kp C_NEXT       &kp C_BRIGHTNESS_DEC  &kp F12  &trans
-                                &trans     &trans   &trans                  &kp C_PLAY_PAUSE  &trans             &trans
-            >;
-        };
-
-        special {
-            bindings = <
-&trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans
-                        &trans  &trans  &trans    &trans  &trans  &trans
+&trans  &kp F1  &kp F2    &kp F3     &kp F4   &kp F5                  &kp F6            &kp F7             &kp F8           &kp F9                &kp F10  &kp PRINTSCREEN
+&trans  &trans  &kp HOME  &kp PG_UP  &kp END  &kp C_AC_SCROLL_UP      &kp C_MUTE        &kp C_VOLUME_DOWN  &kp C_VOLUME_UP  &kp C_BRIGHTNESS_INC  &kp F11  &trans
+&trans  &trans  &trans    &kp PG_DN  &trans   &kp C_AC_SCROLL_DOWN    &kp C_PREV        &kp C_PLAY_PAUSE   &kp C_NEXT       &kp C_BRIGHTNESS_DEC  &kp F12  &trans
+                          &trans     &trans   &trans                  &kp C_PLAY_PAUSE  &trans             &trans
             >;
         };
 
@@ -113,8 +234,8 @@
         compatible = "zmk,conditional-layers";
 
         bt_layer {
-            if-layers = <2 4>;
-            then-layer = <5>;
+            if-layers = <3 2>;
+            then-layer = <4>;
         };
     };
 };
