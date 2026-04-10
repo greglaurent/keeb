@@ -204,15 +204,6 @@
             >;
         };
 
-        macros {
-            bindings = <
-&trans      &rust_annotate  &rust_closure  &rust_arrow_fat  &rust_arrow  &rust_turbo_fish    &trans           &trans            &trans              &trans               &trans              &trans
-&caps_word  &logic_lt       &logic_gt      &logic_eq_not    &logic_and   &logic_or           &logic_bit_left  &logic_bit_right  &logic_assign_plus  &logic_assign_minus  &logic_assign_mult  &logic_assign_div
-&trans      &trans          &trans         &trans           &trans       &trans              &trans           &trans            &trans              &trans               &trans              &trans
-                                           &trans           &trans       &trans              &trans           &trans            &trans
-            >;
-        };
-
         nav {
             bindings = <
 &trans  &kp PAGE_UP    &kp HOME   &kp UP      &kp END      &kp INSERT    &trans    &trans    &trans  &trans       &kp G       &trans
@@ -222,12 +213,21 @@
             >;
         };
 
+        macros {
+            bindings = <
+&trans      &rust_annotate  &rust_closure  &rust_arrow_fat  &rust_arrow  &rust_turbo_fish    &trans           &trans            &trans              &trans               &trans              &trans
+&caps_word  &logic_lt       &logic_gt      &logic_eq_not    &logic_and   &logic_or           &logic_bit_left  &logic_bit_right  &logic_assign_plus  &logic_assign_minus  &logic_assign_mult  &logic_assign_div
+&trans      &trans          &trans         &trans           &trans       &trans              &trans           &trans            &trans              &trans               &trans              &trans
+                                           &trans           &trans       &trans              &trans           &trans            &trans
+            >;
+        };
+
         media {
             bindings = <
-&trans  &kp F1                &kp F2  &kp F3  &kp F4                &kp F5    &kp F6            &kp F7             &kp F8           &kp F9  &kp F10  &kp PRINTSCREEN
-&trans  &kp C_PREV            &trans  &trans  &kp C_NEXT            &trans    &kp C_MUTE        &kp C_VOLUME_DOWN  &kp C_VOLUME_UP  &trans  &kp F11  &trans
-&trans  &kp C_BRIGHTNESS_DEC  &trans  &trans  &kp C_BRIGHTNESS_INC  &trans    &trans            &trans             &trans           &trans  &kp F12  &trans
-                                      &trans  &trans                &trans    &kp C_PLAY_PAUSE  &trans             &trans
+&trans  &kp F1                &kp F2  &kp F3  &kp F4                &kp F5    &kp F6  &kp F7            &kp F8        &kp F9           &kp F10  &kp PRINTSCREEN
+&trans  &kp C_PREV            &trans  &trans  &kp C_NEXT            &trans    &trans  &kp C_MUTE        &kp C_VOL_DN  &kp C_VOLUME_UP  &kp F11  &trans
+&trans  &kp C_BRIGHTNESS_DEC  &trans  &trans  &kp C_BRIGHTNESS_INC  &trans    &trans  &kp C_PLAY_PAUSE  &trans        &trans           &kp F12  &trans
+                                      &trans  &trans                &trans    &trans  &trans            &trans
             >;
         };
 
@@ -252,7 +252,7 @@
 
         bt_layer {
             if-layers = <1 3>;
-            then-layer = <3>;
+            then-layer = <2>;
         };
     };
 };
