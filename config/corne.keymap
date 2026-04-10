@@ -206,10 +206,10 @@
 
         nav {
             bindings = <
-&trans  &kp PAGE_UP    &kp HOME   &kp UP      &kp END      &kp INSERT    &trans    &trans    &trans  &trans       &kp G       &trans
-&trans  &kp PAGE_DOWN  &kp LEFT   &kp DOWN    &kp RIGHT    &kp DELETE    &kp LEFT  &kp DOWN  &kp UP  &kp RIGHT    &kp DOLLAR  &trans
-&trans  &kp K_UNDO     &kp K_CUT  &kp K_COPY  &kp K_PASTE  &kp K_REDO    &kp W     &kp B     &kp E   &kp PERCENT  &vim_ci     &trans
-                                  &trans      &trans       &trans        &trans    &trans    &trans
+&trans  &kp PAGE_UP    &kp HOME        &kp UP_ARROW    &kp END          &kp INSERT    &trans          &trans          &trans        &trans           &kp G       &trans
+&trans  &kp PAGE_DOWN  &kp LEFT_ARROW  &kp DOWN_ARROW  &kp RIGHT_ARROW  &kp DELETE    &kp LEFT_ARROW  &kp DOWN_ARROW  &kp UP_ARROW  &kp RIGHT_ARROW  &kp DOLLAR  &trans
+&trans  &kp K_UNDO     &kp K_CUT       &kp K_COPY      &kp K_PASTE      &kp K_REDO    &kp W           &kp B           &kp E         &kp PERCENT      &vim_ci     &trans
+                                       &trans          &trans           &trans        &trans          &trans          &trans
             >;
         };
 
