@@ -198,7 +198,7 @@
         sym {
             bindings = <
 &kp GRAVE                  &kp NUMBER_1     &kp NUMBER_2  &kp NUMBER_3  &kp NUMBER_4      &kp NUMBER_5         &kp NUMBER_6       &kp NUMBER_7           &kp NUMBER_8        &kp NUMBER_9                   &kp NUMBER_0           &hrm_r LC(BACKSPACE) LC(BACKSPACE)
-&trans                     &kp EXCLAMATION  &kp AT_SIGN   &kp HASH      &kp DOLLAR        &kp PERCENT          &hrm_r CARET LEFT  &hrm_r AMPERSAND DOWN  &hrm_r ASTERISK UP  &hrm_r LEFT_PARENTHESIS RIGHT  &kp RIGHT_PARENTHESIS  &trans
+&trans                     &kp EXCLAMATION  &kp AT_SIGN   &kp HASH      &kp DOLLAR        &kp PERCENT          &hrm_r LEFT CARET  &hrm_r DOWN AMPERSAND  &hrm_r UP ASTERISK  &hrm_r RIGHT LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &trans
 &hrm_l LC(DEL) LC(DELETE)  &kp MINUS        &kp PLUS      &kp EQUAL     &kp LEFT_BRACKET  &kp RIGHT_BRACKET    &kp LEFT_BRACE     &kp RIGHT_BRACE        &kp LESS_THAN       &kp GREATER_THAN               &kp UNDER              &trans
                                                           &trans        &trans            &trans               &trans             &trans                 &trans
             >;
