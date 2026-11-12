@@ -87,7 +87,7 @@
         rust_turbo_fish: rust_turbo_fish {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&kp COLON &kp COLON &kp LT &kp GT>, <&macro_press>;
+            bindings = <&macro_press>, <&kp COLON &kp COLON &kp LT &kp GT>;
 
             label = "RUST_TURBO_FISH";
         };
@@ -95,7 +95,7 @@
         rust_closure: rust_closure {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&kp PIPE &kp X &kp PIPE>, <&macro_press>;
+            bindings = <&macro_press>, <&kp PIPE &kp X &kp PIPE>;
 
             label = "RUST_CLOSURE";
         };
@@ -175,7 +175,7 @@
         logic_assign_minus: logic_assign_minus {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&kp MINUS &kp EQUAL>, <&macro_press>;
+            bindings = <&macro_press>, <&kp MINUS &kp EQUAL>;
 
             label = "LOGIC_ASSIGN_MINUS";
         };
@@ -203,6 +203,62 @@
 
             label = "VIM_CI";
         };
+
+        vim_di: vim_di {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&macro_press>, <&kp D &kp I>;
+
+            label = "VIM_DI";
+        };
+
+        vim_yi: vim_yi {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&macro_press>, <&kp Y &kp I>;
+
+            label = "VIM_YI";
+        };
+
+        vim_vi: vim_vi {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&macro_press>, <&kp V &kp I>;
+
+            label = "VIM_VI";
+        };
+
+        vim_ca: vim_ca {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&macro_press>, <&kp C &kp A>;
+
+            label = "VIM_CA";
+        };
+
+        vim_da: vim_da {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&macro_press>, <&kp D &kp A>;
+
+            label = "VIM_DA";
+        };
+
+        vim_ya: vim_ya {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&macro_press>, <&kp Y &kp A>;
+
+            label = "VIM_YA";
+        };
+
+        vim_va: vim_va {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&macro_press>, <&kp V &kp A>;
+
+            label = "VIM_VA";
+        };
     };
 
     keymap {
@@ -216,16 +272,16 @@
             //                    | GUI | LWR | SPC |   | ENT | RSE  | ALT |
 
             bindings = <
-&special_l TAB TAB        &kp Q               &kp W              &kp E                  &kp R                &kp T                    &kp Y                   &kp U                 &kp I                   &kp O               &kp P                       &special_r BACKSPACE BACKSPACE
-&kp ESCAPE                &hrm_l LEFT_META A  &hrm_l LEFT_ALT S  &hrm_l LEFT_CONTROL D  &hrm_l LEFT_SHIFT F  &kp G                    &kp H                   &hrm_r RIGHT_SHIFT J  &hrm_r RIGHT_CONTROL K  &hrm_r RIGHT_ALT L  &hrm_r RIGHT_GUI SEMICOLON  &kp SQT
-&special_l DELETE DELETE  &kp Z               &kp X              &kp C                  &kp V                &kp B                    &kp N                   &kp M                 &kp COMMA               &kp DOT             &kp FSLH                    &kp BACKSLASH
-                                                                 &mo 3                  &mo 1                &mt LEFT_SHIFT RETURN    &special_r SPACE SPACE  &mo 2                 &mo 4
+&special_l TAB TAB        &kp Q               &kp W              &kp E                  &kp R                &kp T                           &kp Y                   &kp U                 &kp I                   &kp O               &kp P                       &special_r BACKSPACE BACKSPACE
+&kp ESCAPE                &hrm_l LEFT_META A  &hrm_l LEFT_ALT S  &hrm_l LEFT_CONTROL D  &hrm_l LEFT_SHIFT F  &kp G                           &kp H                   &hrm_r RIGHT_SHIFT J  &hrm_r RIGHT_CONTROL K  &hrm_r RIGHT_ALT L  &hrm_r RIGHT_GUI SEMICOLON  &kp SQT
+&special_l DELETE DELETE  &kp Z               &kp X              &kp C                  &kp V                &kp B                           &kp N                   &kp M                 &kp COMMA               &kp DOT             &kp FSLH                    &kp BACKSLASH
+                                                                 &mo 3                  &mo 1                &special_l LEFT_SHIFT RETURN    &special_r SPACE SPACE  &mo 2                 &mo 4
             >;
         };
 
         sym {
             bindings = <
-&kp GRAVE                        &kp NUMBER_1     &kp NUMBER_2  &kp NUMBER_3  &kp NUMBER_4      &kp NUMBER_5         &kp NUMBER_6    &kp NUMBER_7     &kp NUMBER_8   &kp NUMBER_9          &kp NUMBER_0           &special_r (LC(BACKSPACE)) LC(BACKSPACE)
+&special_l TILDE GRAVE           &kp NUMBER_1     &kp NUMBER_2  &kp NUMBER_3  &kp NUMBER_4      &kp NUMBER_5         &kp NUMBER_6    &kp NUMBER_7     &kp NUMBER_8   &kp NUMBER_9          &kp NUMBER_0           &special_r (LC(BACKSPACE)) LC(BACKSPACE)
 &trans                           &kp EXCLAMATION  &kp AT_SIGN   &kp HASH      &kp DOLLAR        &kp PERCENT          &kp CARET       &kp AMPERSAND    &kp ASTERISK   &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &trans
 &special_l (LC(DEL)) LC(DELETE)  &kp MINUS        &kp PLUS      &kp EQUAL     &kp LEFT_BRACKET  &kp RIGHT_BRACKET    &kp LEFT_BRACE  &kp RIGHT_BRACE  &kp LESS_THAN  &kp GREATER_THAN      &kp UNDER              &trans
                                                                 &trans        &trans            &trans               &trans          &trans           &trans
@@ -234,9 +290,9 @@
 
         nav {
             bindings = <
-&trans  &kp PAGE_UP    &kp HOME        &kp UP_ARROW    &kp END          &kp INSERT    &trans          &trans          &trans        &trans           &kp G       &trans
-&trans  &kp PAGE_DOWN  &kp LEFT_ARROW  &kp DOWN_ARROW  &kp RIGHT_ARROW  &kp DELETE    &kp LEFT_ARROW  &kp DOWN_ARROW  &kp UP_ARROW  &kp RIGHT_ARROW  &kp DOLLAR  &trans
-&trans  &kp K_UNDO     &kp K_CUT       &kp K_COPY      &kp K_PASTE      &kp K_REDO    &kp W           &kp B           &kp E         &kp PERCENT      &vim_ci     &trans
+&trans  &kp PAGE_UP    &kp HOME        &kp UP_ARROW    &kp END          &kp INSERT    &trans          &vim_vi         &vim_va        &trans           &vim_di  &vim_da
+&trans  &kp PAGE_DOWN  &kp LEFT_ARROW  &kp DOWN_ARROW  &kp RIGHT_ARROW  &kp DELETE    &kp LEFT_ARROW  &kp DOWN_ARROW  &kp UP_ARROW   &kp RIGHT_ARROW  &vim_yi  &vim_ya
+&trans  &kp K_UNDO     &kp K_CUT       &kp K_COPY      &kp K_PASTE      &kp K_REDO    &kp LS(LC(O))   &kp LS(LC(D))   &kp LS(LC(U))  &kp LS(LC(I))    &vim_ci  &vim_ca
                                        &trans          &trans           &trans        &trans          &trans          &trans
             >;
         };
