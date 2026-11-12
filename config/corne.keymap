@@ -228,36 +228,54 @@
             label = "VIM_VI";
         };
 
-        vim_ca: vim_ca {
+        vim_ddkp: vim_ca {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&macro_press>, <&kp C &kp A>;
+            bindings = <&macro_press>, <&kp D &kp D &kp K &kp LS(P)>;
 
             label = "VIM_CA";
         };
 
-        vim_da: vim_da {
+        vim_ddp: vim_da {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&macro_press>, <&kp D &kp A>;
+            bindings = <&macro_press>, <&kp D &kp D &kp P>;
 
             label = "VIM_DA";
         };
 
-        vim_ya: vim_ya {
+        vim_yyp: vim_ya {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&macro_press>, <&kp Y &kp A>;
+            bindings = <&macro_press>, <&kp Y &kp Y &kp P>;
 
             label = "VIM_YA";
         };
 
-        vim_va: vim_va {
+        vim_nav_win: vim_va {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&macro_press>, <&kp V &kp A>;
+            bindings = <&macro_press>, <&kp LC(W)>;
 
             label = "VIM_VA";
+        };
+
+        vim_gcc: vim_gcc {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&macro_press>, <&kp G &kp C &kp C>;
+
+            label = "VIM_GCC";
+        };
+
+        vim_copy_page: vim_copy_page {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings =
+                <&macro_press>,
+                <&kp G &kp G &kp LS(V) &kp LS(G) &kp DOUBLE_QUOTES &kp PLUS &kp Y>;
+
+            label = "VIM_COPY_PAGE";
         };
     };
 
@@ -272,10 +290,10 @@
             //                    | GUI | LWR | SPC |   | ENT | RSE  | ALT |
 
             bindings = <
-&special_l TAB TAB        &kp Q               &kp W              &kp E                  &kp R                &kp T                           &kp Y                   &kp U                 &kp I                   &kp O               &kp P                       &special_r BACKSPACE BACKSPACE
-&kp ESCAPE                &hrm_l LEFT_META A  &hrm_l LEFT_ALT S  &hrm_l LEFT_CONTROL D  &hrm_l LEFT_SHIFT F  &kp G                           &kp H                   &hrm_r RIGHT_SHIFT J  &hrm_r RIGHT_CONTROL K  &hrm_r RIGHT_ALT L  &hrm_r RIGHT_GUI SEMICOLON  &kp SQT
-&special_l DELETE DELETE  &kp Z               &kp X              &kp C                  &kp V                &kp B                           &kp N                   &kp M                 &kp COMMA               &kp DOT             &kp FSLH                    &kp BACKSLASH
-                                                                 &mo 3                  &mo 1                &special_l LEFT_SHIFT RETURN    &special_r SPACE SPACE  &mo 2                 &mo 4
+&special_l TAB TAB          &kp Q               &kp W              &kp E                  &kp R                &kp T                           &kp Y                   &kp U                 &kp I                   &kp O               &kp P                       &special_r BACKSPACE BACKSPACE
+&special_l CAPSLOCK ESCAPE  &hrm_l LEFT_META A  &hrm_l LEFT_ALT S  &hrm_l LEFT_CONTROL D  &hrm_l LEFT_SHIFT F  &kp G                           &kp H                   &hrm_r RIGHT_SHIFT J  &hrm_r RIGHT_CONTROL K  &hrm_r RIGHT_ALT L  &hrm_r RIGHT_GUI SEMICOLON  &kp SQT
+&special_l DELETE DELETE    &kp Z               &kp X              &kp C                  &kp V                &kp B                           &kp N                   &kp M                 &kp COMMA               &kp DOT             &kp FSLH                    &kp BACKSLASH
+                                                                   &mo 3                  &mo 1                &special_l LEFT_SHIFT RETURN    &special_r SPACE SPACE  &mo 2                 &mo 4
             >;
         };
 
@@ -290,19 +308,19 @@
 
         nav {
             bindings = <
-&trans  &kp PAGE_UP    &kp HOME        &kp UP_ARROW    &kp END          &kp INSERT    &trans          &vim_vi         &vim_va        &trans           &vim_di  &vim_da
-&trans  &kp PAGE_DOWN  &kp LEFT_ARROW  &kp DOWN_ARROW  &kp RIGHT_ARROW  &kp DELETE    &kp LEFT_ARROW  &kp DOWN_ARROW  &kp UP_ARROW   &kp RIGHT_ARROW  &vim_yi  &vim_ya
-&trans  &kp K_UNDO     &kp K_CUT       &kp K_COPY      &kp K_PASTE      &kp K_REDO    &kp LS(LC(O))   &kp LS(LC(D))   &kp LS(LC(U))  &kp LS(LC(I))    &vim_ci  &vim_ca
+&trans  &kp PAGE_UP    &kp HOME        &kp UP_ARROW    &kp END          &kp INSERT    &vim_copy_page  &vim_yi         &vim_vi        &vim_ci          &vim_di       &vim_ddkp
+&trans  &kp PAGE_DOWN  &kp LEFT_ARROW  &kp DOWN_ARROW  &kp RIGHT_ARROW  &kp DELETE    &kp LEFT_ARROW  &kp DOWN_ARROW  &kp UP_ARROW   &kp RIGHT_ARROW  &vim_nav_win  &vim_yyp
+&trans  &kp K_UNDO     &kp K_CUT       &kp K_COPY      &kp K_PASTE      &kp K_REDO    &kp LS(LC(O))   &kp LS(LC(D))   &kp LS(LC(U))  &kp LS(LC(I))    &vim_gcc      &vim_ddp
                                        &trans          &trans           &trans        &trans          &trans          &trans
             >;
         };
 
         macros {
             bindings = <
-&trans      &rust_annotate  &rust_closure  &rust_arrow_fat  &rust_arrow  &rust_turbo_fish    &trans           &trans            &trans              &trans               &trans              &trans
-&caps_word  &logic_lt       &logic_gt      &logic_eq_not    &logic_and   &logic_or           &logic_bit_left  &logic_bit_right  &logic_assign_plus  &logic_assign_minus  &logic_assign_mult  &logic_assign_div
-&trans      &trans          &trans         &trans           &trans       &trans              &trans           &trans            &trans              &trans               &trans              &trans
-                                           &trans           &trans       &trans              &trans           &trans            &trans
+&trans  &rust_annotate  &rust_closure  &rust_arrow_fat  &rust_arrow  &rust_turbo_fish    &trans           &trans            &trans              &trans               &trans              &trans
+&trans  &logic_lt       &logic_gt      &logic_eq_not    &logic_and   &logic_or           &logic_bit_left  &logic_bit_right  &logic_assign_plus  &logic_assign_minus  &logic_assign_mult  &logic_assign_div
+&trans  &trans          &trans         &trans           &trans       &trans              &trans           &trans            &trans              &trans               &vim_gcc            &trans
+                                       &trans           &trans       &trans              &trans           &trans            &trans
             >;
         };
 
