@@ -71,7 +71,7 @@
         rust_arrow: rust_arrow {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&macro_press>, <&kp MINUS &kp GT>;
+            bindings = <&macro_tap>, <&kp MINUS &kp GT>;
 
             label = "RUST_ARROW";
         };
@@ -79,7 +79,7 @@
         rust_arrow_fat: rust_arrow_fat {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&macro_press>, <&kp EQUAL &kp GT>;
+            bindings = <&macro_tap>, <&kp EQUAL &kp GT>;
 
             label = "RUST_ARROW_FAT";
         };
@@ -87,7 +87,7 @@
         rust_turbo_fish: rust_turbo_fish {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&macro_press>, <&kp COLON &kp COLON &kp LT &kp GT>;
+            bindings = <&macro_tap>, <&kp COLON &kp COLON &kp LT &kp GT>;
 
             label = "RUST_TURBO_FISH";
         };
@@ -95,7 +95,7 @@
         rust_closure: rust_closure {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&macro_press>, <&kp PIPE &kp X &kp PIPE>;
+            bindings = <&macro_tap>, <&kp PIPE &kp X &kp PIPE>;
 
             label = "RUST_CLOSURE";
         };
@@ -103,7 +103,7 @@
         rust_annotate: rust_annotate {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&kp POUND &kp LBKT &kp RBKT>, <&macro_press>;
+            bindings = <&macro_tap>, <&kp POUND &kp LBKT &kp RBKT>;
 
             label = "RUST_ANNOTATE";
         };
@@ -111,7 +111,7 @@
         logic_eq_not: logic_eq_not {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&macro_press>, <&kp EXCL &kp EQUAL>;
+            bindings = <&macro_tap>, <&kp EXCL &kp EQUAL>;
 
             label = "LOGIC_EQ_NOT";
         };
@@ -119,7 +119,7 @@
         logic_lt: logic_lt {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&macro_press>, <&kp LT &kp EQUAL>;
+            bindings = <&macro_tap>, <&kp LT &kp EQUAL>;
 
             label = "LOGIC_LT";
         };
@@ -127,7 +127,7 @@
         logic_gt: logic_gt {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&macro_press>, <&kp GT &kp EQUAL>;
+            bindings = <&macro_tap>, <&kp GT &kp EQUAL>;
 
             label = "LOGIC_GT";
         };
@@ -135,7 +135,7 @@
         logic_and: logic_and {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&macro_press>, <&kp AMPS &kp AMPS>;
+            bindings = <&macro_tap>, <&kp AMPS &kp AMPS>;
 
             label = "LOGIC_AND";
         };
@@ -143,7 +143,7 @@
         logic_or: logic_or {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&macro_press>, <&kp PIPE &kp PIPE>;
+            bindings = <&macro_tap>, <&kp PIPE &kp PIPE>;
 
             label = "LOGIC_OR";
         };
@@ -151,7 +151,7 @@
         logic_bit_left: logic_bit_left {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&macro_press>, <&kp LT &kp LT>;
+            bindings = <&macro_tap>, <&kp LT &kp LT>;
 
             label = "LOGIC_BIT_LEFT";
         };
@@ -159,7 +159,7 @@
         logic_bit_right: logic_bit_right {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&macro_press>, <&kp GT &kp GT>;
+            bindings = <&macro_tap>, <&kp GT &kp GT>;
 
             label = "LOGIC_BIT_RIGHT";
         };
@@ -167,7 +167,7 @@
         logic_assign_plus: logic_assign_plus {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&macro_press>, <&kp PLUS &kp EQUAL>;
+            bindings = <&macro_tap>, <&kp PLUS &kp EQUAL>;
 
             label = "LOGIC_ASSIGN_PLUS";
         };
@@ -175,7 +175,7 @@
         logic_assign_minus: logic_assign_minus {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&macro_press>, <&kp MINUS &kp EQUAL>;
+            bindings = <&macro_tap>, <&kp MINUS &kp EQUAL>;
 
             label = "LOGIC_ASSIGN_MINUS";
         };
@@ -183,7 +183,7 @@
         logic_assign_mult: logic_assign_mult {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&macro_press>, <&kp STAR &kp EQUAL>;
+            bindings = <&macro_tap>, <&kp STAR &kp EQUAL>;
 
             label = "LOGIC_ASSIGN_MULT";
         };
@@ -191,7 +191,7 @@
         logic_assign_div: logic_assign_div {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&macro_press>, <&kp FSLH &kp EQUAL>;
+            bindings = <&macro_tap>, <&kp FSLH &kp EQUAL>;
 
             label = "LOGIC_ASSIGN_DIV";
         };
@@ -199,7 +199,7 @@
         vim_ci: vim_ci {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&macro_press>, <&kp C &kp I>;
+            bindings = <&macro_tap>, <&kp C &kp I>;
 
             label = "VIM_CI";
         };
@@ -207,7 +207,7 @@
         vim_di: vim_di {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&macro_press>, <&kp D &kp I>;
+            bindings = <&macro_tap>, <&kp D &kp I>;
 
             label = "VIM_DI";
         };
@@ -215,7 +215,7 @@
         vim_yi: vim_yi {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&macro_press>, <&kp Y &kp I>;
+            bindings = <&macro_tap>, <&kp Y &kp I>;
 
             label = "VIM_YI";
         };
@@ -223,7 +223,7 @@
         vim_vi: vim_vi {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&macro_press>, <&kp V &kp I>;
+            bindings = <&macro_tap>, <&kp V &kp I>;
 
             label = "VIM_VI";
         };
@@ -231,7 +231,7 @@
         vim_ddkp: vim_ca {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&macro_press>, <&kp D &kp D &kp K &kp LS(P)>;
+            bindings = <&macro_tap>, <&kp D &kp D &kp K &kp LS(P)>;
 
             label = "VIM_CA";
         };
@@ -239,7 +239,7 @@
         vim_ddp: vim_da {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&macro_press>, <&kp D &kp D &kp P>;
+            bindings = <&macro_tap>, <&kp D &kp D &kp P>;
 
             label = "VIM_DA";
         };
@@ -247,7 +247,7 @@
         vim_yyp: vim_ya {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&macro_press>, <&kp Y &kp Y &kp P>;
+            bindings = <&macro_tap>, <&kp Y &kp Y &kp P>;
 
             label = "VIM_YA";
         };
@@ -255,7 +255,7 @@
         vim_nav_win: vim_va {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&macro_press>, <&kp LC(W)>;
+            bindings = <&macro_tap>, <&kp LC(W)>;
 
             label = "VIM_VA";
         };
@@ -263,7 +263,7 @@
         vim_gcc: vim_gcc {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&macro_press>, <&kp G &kp C &kp C>;
+            bindings = <&macro_tap>, <&kp G &kp C &kp C>;
 
             label = "VIM_GCC";
         };
@@ -272,7 +272,7 @@
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
             bindings =
-                <&macro_press>,
+                <&macro_tap>,
                 <&kp G &kp G &kp LS(V) &kp LS(G) &kp DOUBLE_QUOTES &kp PLUS &kp Y>;
 
             label = "VIM_COPY_PAGE";
