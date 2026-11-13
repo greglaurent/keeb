@@ -277,6 +277,13 @@
 
             label = "VIM_COPY_PAGE";
         };
+
+        ctrl_c: ctrl_c {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp LC(C)>;
+            label = "CTRL_C";
+        };
     };
 
     keymap {
@@ -308,10 +315,10 @@
 
         nav {
             bindings = <
-&trans  &kp PAGE_UP    &kp HOME        &kp UP_ARROW    &kp END          &kp INSERT    &vim_copy_page  &vim_yi         &vim_vi        &vim_ci          &vim_di       &vim_ddkp
-&trans  &kp PAGE_DOWN  &kp LEFT_ARROW  &kp DOWN_ARROW  &kp RIGHT_ARROW  &kp DELETE    &kp LEFT_ARROW  &kp DOWN_ARROW  &kp UP_ARROW   &kp RIGHT_ARROW  &vim_nav_win  &vim_yyp
-&trans  &kp K_UNDO     &kp K_CUT       &kp K_COPY      &kp K_PASTE      &kp K_REDO    &kp LS(LC(O))   &kp LS(LC(D))   &kp LS(LC(U))  &kp LS(LC(I))    &vim_gcc      &vim_ddp
-                                       &trans          &trans           &trans        &trans          &trans          &trans
+&trans   &kp PAGE_UP    &kp HOME        &kp UP_ARROW    &kp END          &kp INSERT    &vim_copy_page  &vim_yi         &vim_vi        &vim_ci          &vim_di       &vim_ddkp
+&ctrl_c  &kp PAGE_DOWN  &kp LEFT_ARROW  &kp DOWN_ARROW  &kp RIGHT_ARROW  &kp DELETE    &kp LEFT_ARROW  &kp DOWN_ARROW  &kp UP_ARROW   &kp RIGHT_ARROW  &vim_nav_win  &vim_yyp
+&trans   &kp K_UNDO     &kp K_CUT       &kp K_COPY      &kp K_PASTE      &kp K_REDO    &kp LS(LC(O))   &kp LS(LC(D))   &kp LS(LC(U))  &kp LS(LC(I))    &vim_gcc      &vim_ddp
+                                        &trans          &trans           &trans        &trans          &trans          &trans
             >;
         };
 
